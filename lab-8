@@ -1,0 +1,15 @@
+import math
+
+a, b = 0.0, 0.2
+e = 0.01
+
+while (b - a) > e:
+    x = (a + b) / 2
+    f = math.sin(math.sqrt(x)) - math.cos(math.sqrt(x)) + 2 * x * math.sqrt(x)
+    
+    if f < 0:
+        a = x
+    else:
+        b = x
+    
+    print()
